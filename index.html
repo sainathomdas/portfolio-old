@@ -29,7 +29,12 @@
     h2,h4,h5{
       color: green;
     }
- 
+    .navbar-toggler>.close {
+    display:inline;
+}
+.navbar-toggler.collapsed>.close, .navbar-toggler:not(.collapsed)>.navbar-toggler-icon {
+    display:none;
+}
 
   </style>
 </head>
@@ -47,9 +52,11 @@
 
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
       <a class="navbar-brand ml-lg-3" href=""><strong>Sainath Omdas</strong></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
+      <span class="my-1 mx-2 close text-white">X</span>    
+        
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto justify-content-center">
