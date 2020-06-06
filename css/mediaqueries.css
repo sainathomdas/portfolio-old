@@ -1,0 +1,245 @@
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  .name {
+    text-transform: uppercase;
+    font-size: 7rem;
+    font-weight: bold;
+    transition: all ease-in-out 0.2s;
+    color: white;
+  }
+
+  .skills {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    transition: all ease-in-out 0.2s;
+  }
+
+  .btn-header {
+    background-color: crimson;
+    padding: 10px;
+    min-width: 9rem;
+    transition: all ease-in-out 0.2s;
+  }
+
+  .proj-btn {
+    display: inline-block;
+    min-width: 8rem;
+    font-family: "Nunito", sans-serif;
+    transition: all ease-in-out 0.2s;
+  }
+  
+}
+
+/* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .name {
+    text-transform: uppercase;
+    font-size: 7rem;
+    font-weight: bold;
+    transition: all ease-in-out 0.2s;
+    color: white;
+  }
+
+  .skills {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    transition: all ease-in-out 0.2s;
+  }
+
+  .btn-header {
+    background-color: crimson;
+    padding: 10px;
+    min-width: 9rem;
+    transition: all ease-in-out 0.2s;
+  }
+
+  .proj-btn {
+    display: inline-block;
+    min-width: 6rem;
+    font-family: "Nunito", sans-serif;
+    transition: all ease-in-out 0.2s;
+  }
+
+}
+
+/* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .name {
+    text-transform: uppercase;
+    font-size: 7rem;
+    font-weight: bold;
+    transition: all ease-in-out 0.2s;
+    color: white;
+  }
+
+  .skills {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    transition: all ease-in-out 0.2s;
+  }
+
+  .btn-header {
+    background-color: crimson;
+    padding: 10px;
+    min-width: 9rem;
+    transition: all ease-in-out 0.2s;
+  }
+  .proj-btn {
+    display: inline-block;
+    min-width: 5rem;
+    font-family: "Nunito", sans-serif;
+    transition: all ease-in-out 0.2s;
+  }
+}
+
+/* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .name {
+    text-transform: uppercase;
+    font-size: 6rem;
+    font-weight: bold;
+    transition: all ease-in-out 0.2s;
+    color: white;
+  }
+
+  .skills {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    transition: all ease-in-out 0.2s;
+  }
+
+  .btn-header {
+    background-color: crimson;
+    padding: 10px;
+    min-width: 9rem;
+    transition: all ease-in-out 0.2s;
+  }
+  .proj-btn {
+    display: inline-block;
+    min-width: 5.5rem;
+    font-family: "Nunito", sans-serif;
+    transition: all ease-in-out 0.2s;
+  }
+}
+
+/* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .name {
+    text-transform: uppercase;
+    font-size: 5rem;
+    font-weight: bold;
+    transition: all ease-in-out 0.2s;
+    color: white;
+  }
+
+  .skills {
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    transition: all ease-in-out 0.2s;
+  }
+
+  .btn-header {
+    background-color: crimson;
+    padding: 10px;
+    min-width: 8rem;
+    transition: all ease-in-out 0.2s;
+  }
+  .proj-btn {
+    display: inline-block;
+    min-width: 8rem;
+    font-family: "Nunito", sans-serif;
+    transition: all ease-in-out 0.2s;
+  }
+}
+
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .name {
+    text-transform: uppercase;
+    font-size: 3.7rem;
+    font-weight: bold;
+    transition: all ease-in-out 0.2s;
+    color: white;
+  }
+
+  .skills {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: white;
+    transition: all ease-in-out 0.2s;
+  }
+
+  .btn-header {
+    background-color: crimson;
+    padding: 10px;
+    min-width: 5rem;
+    transition: all ease-in-out 0.2s;
+  }
+
+  .proj-btn {
+    display: inline-block;
+    min-width: 4rem;
+    font-family: "Nunito", sans-serif;
+    transition: all ease-in-out 0.2s;
+  }
+}
+
+@media (max-width: 319px) {
+  .name {
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: bold;
+    transition: all ease-in-out 0.2s;
+    color: white;
+  }
+
+  .skills {
+    font-size: 0.6rem;
+    font-weight: bold;
+    color: white;
+    transition: all ease-in-out 0.2s;
+  }
+
+  .btn-header {
+    background-color: crimson;
+    padding: 8px;
+    min-width: 4rem;
+    transition: all ease-in-out 0.2s;
+  }
+
+  .proj-btn {
+    display: inline-block;
+    min-width: 5rem;
+    font-family: "Nunito", sans-serif;
+    transition: all ease-in-out 0.2s;
+  }
+}

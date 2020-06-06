@@ -1,573 +1,337 @@
-<html >
+<!doctype html>
+<html lang="en">
+
 <head>
+  <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Sainath Omdas</title>
+
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+
   <!-- Bootstrap core CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css\bootstrap.min.css" rel="stylesheet">
+
   <!-- Material Design Bootstrap -->
-  <link href="css/mdb.min.css" rel="stylesheet">
-  <!-- Your custom styles (optional) -->
-  
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css\mdb.min.css" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/myStyle.css">
-  <link rel="stylesheet" href="css/navMargin.css">
-  <!-- Animate on scroll -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+  <link rel="stylesheet" href="css\style.css">
 
+  <link rel="stylesheet" href="css\mediaqueries.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
-  <style type="text/css">
-    .top-nav-collapse {
-      background-color: #000;
-    }
-    h2,h4,h5{
-      color: green;
-    }
-    .navbar-toggler>.close {
-    display:inline;
-}
-.navbar-toggler.collapsed>.close, .navbar-toggler:not(.collapsed)>.navbar-toggler-icon {
-    display:none;
-}
+  <title>Sainath-Portfolio</title>
 
-  </style>
 </head>
 
 <body>
-
-  <!--Preloader starts-->
-
-  <div id="preloader"></div>
-
-  <!--Preloader ends-->
-
-  <!--Main Navigation-->
-  <header>
-
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
-      <a class="navbar-brand ml-lg-3" href=""><strong>Sainath Omdas</strong></a>
-      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-      <span class="my-1 mx-2 close text-white">X</span>    
-        
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto justify-content-center">
-        <li class="nav-item ">
-          <a class="nav-link cool-link" href="#intro-section">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item  ">
-          <a class="nav-link cool-link" href="#academics">Academics</a>
-        </li>
-        <li class="nav-item  ">
-          <a class="nav-link cool-link" href="#projects">Projects</a>
-        </li>
-        <li class="nav-item  ">
-          <a class="nav-link cool-link" href="#techSkills">TechSkills</a>
-        </li>
-        <li class="nav-item  ">
-          <a class="nav-link" cool-link href="#certifications">Certifications</a>
-        </li>
-        <li class="nav-item  ">
-          <a class="nav-link cool-link" href="#contact">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <div class="navbarMargin"></div>
-
-  <!-- Full Page Intro -->
-  <div id="intro-section" class="view">
-    
-    <!-- Mask & flexbox options-->
-    <div class="mask black d-flex justify-content-center align-items-center">
-      <!-- Content -->
-      <div class="container px-md-3 px-sm-3">
-        <!--Grid row-->
-        <div class="row animated fadeIn text-center justify-content-around ">
-          <!--Grid column-->
-          <div class="avatar col-md-4 col-5 white-text text-center  animated fadeInLeftBig mt-4 " data-aos="fade-right" >
-            <img src="images/sainath.jpeg" alt="Profile Pic" class="img-fluid rounded-circle" id="profileimage">
-          </div>
-          <div class="col-md-6 col mx-auto  white-text text-center animated fadeInRightBig " data-aos="fade-left">
-            <h3 class="display-4 font-weight-bold white-text mb-0 pt-md-5 pt-5">Sainath Omdas</h3>
-            <hr class="hr-light my-4 w-75">
-            <h5 class="subtext-header mt-2 mb-4 "><b><i class="fas fa-envelope"></i>  Email :</b>  <a href="mailto:sainathomdas@gmail.com" class="white-text subtext-header"> sainathomdas@gmail.com</a></h5>
-            <h5 class="subtext-header mt-2 mb-4 "><b><i class="fas fa-phone-volume"></i> Contact :</b> <span class="contact">+91 84650 52042</span></h5>
-            <a href="SainathOmdas_Resume.pdf" class="btn btn-rounded btn-outline-white" title="Download resume" target="_blank">
-              <i class="fas fa-file-download"></i>&nbsp;&nbsp;RESUME
-            </a>
-          </div>
-          <!--Grid column-->
-        </div>
-        <!--Grid row-->
-      </div>
-      <!-- Content -->
-    </div>
-    <!-- Mask & flexbox options-->
+  <div id="loading">
   </div>
-  <!-- Full Page Intro -->
-</header>
-<!--Main Navigation-->
 
 
-<!--Main Layout-->
-<main class="text-center py-0" id="academics">
-
-  <!--Section: about-->
-  <section id="about" class="py-5">
-
-    <!-- Container -->
-    <div class="container" >
-      <!-- Section heading -->
-      <h2 class="h1-responsive font-weight-bold text-center mb-5">Academics</h2>
-      <!-- Section description -->
-      <p class="lead text-center w-responsive mx-auto mb-5" > I've scored all of these to the best of my capability</p>
-
-      <!-- Grid row -->
-      <div class="row ">
-
-        <!-- Grid column -->
-        <div class="col-lg-5 text-center text-lg-left animated fadeIn" data-aos="fade-right">
-          <img class="img-fluid" src="images/blackDegree.png" alt="Sample image" >
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-lg-7 py-5">
-
-         <!-- Grid row -->
-         <div class="row mb-3">
-
-          <!-- Grid column -->
-          <div class="col-1">
-            <i class="fa fa-forward" aria-hidden="true"></i>
-          </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
-          <div class="col-xl-10 col-md-11 col-10">
-            <h5 class="font-weight-bold mb-3">Bachelor's Degree</h5>
-            <p class="grey-text">Bachelor of Technology in Computer Science from Anurag Group of Institution (CVSR) with 9.92 CGPA.
-              <br>(Period of study: 2016 - 2020)</p>
-            </div>
-            <!-- Grid column -->
-
-          </div>
-          <!-- Grid row -->
-          
-          <!-- Grid row 2-->
-          <div class="row mb-3">
-
-            <!-- Grid column -->
-            <div class="col-1">
-              <i class="fa fa-forward" aria-hidden="true"></i>
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <i class="fa fa purple-text"></i>
-            <div class="col-xl-10 col-md-11 col-10">
-              <h5 class="font-weight-bold mb-3">Intemediate</h5>
-              <p class="grey-text">Telangana Board of Intermediate Education in MPC from Gowtham Junior College with 94.7 percentile.<br>
-              (Period of study: 2014 - 2016)</p>
-            </div>
-            <!-- Grid column -->
-          </div>
-          <!-- Grid row -->
-
-          <!--Grid row 3-->
-          <div class="row mb-3">
-            <!-- Grid column -->
-            <div class="col-1">
-              <i class="fa fa-forward" aria-hidden="true"></i>
-            </div>
-            <!-- Grid column -->
-            <!-- Grid column -->
-            <div class="col-xl-10 col-md-11 col-10">
-              <h5 class="font-weight-bold mb-3">School</h5>
-              <p class="grey-text mb-0">SSC from Sri Sai Model High School with 9.7 GPA.<br>(Period of study: 2013 - 2014)</p>
-            </div>
-            <!-- Grid column -->
-
-          </div>
-          <!--Grid row-->
-
-        </div>
-        <!--Grid column-->
-
-      </div>
-      <!-- Grid row -->
-
-    </div>
-    <!-- Container -->
-
-  </section>
-  <!--Section: about-->
-
-  <!--Section: projects-->
-  <section id="projects" class="text-center py-5" style="background-color: rgba(0,0,0,0.9);">
-
-    <!-- Container -->
+  <header id="header">
+    <div class="overlay"></div>
+    <!-- <div class="layer"></div> -->
     <div class="container">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark font-weight-bold scrolling-navbar">
+        <div class="container">
+          <a class="navbar-brand" href="#"><strong>S<span class="crimson">A</span>IN<span
+                class="crimson">A</span>TH</strong></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+            style="z-index: 999999;">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item ml-lg-2">
+                <a class="nav-link" href="#academics">Academics </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#proj_sec">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
 
-      <!-- Section heading -->
-      <h2 class="h1-responsive font-weight-bold mb-5" >Projects</h2>
-      <!-- Section description -->
-      <p class="text-light w-responsive mx-auto mb-5">These are the projects that I have done in my college days.</p>
-
-      <!-- Grid row -->
-      <div class="row text-center">
-
-        <!-- Grid column -->
-        <div class="col-lg-6 col-md-12 mb-lg-0 mb-4">
-          <!--Featured image-->
-          <div class=" overlay rounded z-depth-1" >
-            <img src="images/icacii.PNG" class="img-fluid hoverable img-thumbnail" alt="icacii project image" >
-            <a>
-              <div class="mask rgba-white-slight"></div>
-            </a>
-          </div>
-          <!--Excerpt-->
-          <div class="card-body pb-0">
-            <h4 class="font-weight-bold my-3">International Conference Website</h4>
-            <p class="grey-text">It is a website designed by us (team of 3 members) for our college. Through
-              this, students can able to register into various technical clubs and technical courses
-              offered in our college. We have used PHP,HTML,CSS, Bootstrap and CodeIgniter
-              framework to design this site. 
-            </p><br>
-            <a class="btn btn-purple btn-sm btn hoverable" href="https://icacii.000webhostapp.com/" target="blank"><i class="fa fa-clone left"></i> View project</a>
-            <a class="btn btn-grey btn-sm disabled" href="" target="blank"><i class="fab fa-github"></i> GitHub  project</a>
-          </div>
-        </div>  
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-lg-6 col-md-12 mb-md-0 mb-4 ">
-          <!--Featured image-->
-          <div class=" overlay rounded z-depth-1" >
-            <img src="images/cdtc.png" class="img-fluid hoverable img-thumbnail" alt="cdtc project image">
-            <a>
-              <div class="mask rgba-white-slight"></div>
-            </a>
-          </div>
-          <!--Excerpt-->
-          <div class="card-body pb-0">
-            <h4 class="font-weight-bold my-3">Training Center for Students  </h4>
-            <p class="grey-text">We have designed a website for an international conference ICACII-2019,
-              organizing by Anurag Group of Institutions. We have used PHP, HTML, CSS, Bootstrap
-              and CodeIgniter framework to design this site 
-            </p>
-            <a class="btn btn-purple btn-sm" href="http://anuragcdtc.com/" target="blank"><i class="fa fa-clone left"></i> View project</a>
-            <a class="btn btn-grey btn-sm disabled" href="" target="blank" ><i class="fab fa-github"></i> GitHub  project</a>
+            </ul>
           </div>
         </div>
-        <!-- Grid column -->
-
-        
-
-      </div>
-      <!-- Grid row -->
-      <!-- Grid row -->
-      <div class="row text-center justify-content-center">
-
-        <!-- Grid column -->
-        <div class=" col-lg-6 col-md-12 mb-md-0 mb-4 mt-4 ">
-          <!--Featured image-->
-          <div class=" overlay rounded z-depth-1" >
-            <img src="images/skillsclub.png" class="img-fluid hoverable img-thumbnail" alt="SkillsClub image">
-            <a>
-              <div class="mask rgba-white-slight"></div>
-            </a>
-          </div>
-          <!--Excerpt-->
-          <div class="card-body pb-0">
-            <h4 class="font-weight-bold my-3">
-            Skills Club </h4>
-            <p class="grey-text"> This is an android app for my college's SkillsClub. Using this android app students can able to register in the events conducting by the club. There are separate views for both student and admin.Admin login has provided with features like adding an event, disenrolling the students,deleting the events,sending notifications to students.
-            </p>
-            <a class="btn btn-purple btn-sm disabled" href="#" target="blank"><i class="fa fa-clone left"></i> View project</a>
-            <a class="btn btn-grey btn-sm disabled" href="" target="blank" ><i class="fab fa-github"></i> GitHub  project</a>
-          </div>
-        </div>
-        <!-- Grid column -->
-
-        
-
-      </div>
-      <!-- Grid row -->
-
+      </nav>
     </div>
-    <!-- Container -->
+    </div>
 
-  </section>
-  <!--Section: projects-->
+    <div class="flex-center align-content-center justify-content-center offset-xs-2 offset-lg-3 offset-md-2 col-md-6">
+      <div class="container justify-content-center">
+        <h1 class="crimson">&nbsp;I'm </h1>
+        <h1 class="name">SAINATH</h1>
+        <h5 class="ml-lg-2 skills">Web Developer <span class="crimson">|</span> Android Developer</h5>
+        <div class="pt-lg-2 text-white">
+          <a href="#contact" type="button" class="btn btn-header text-center ml-lg-2 mr-lg-2"> Hire Me</a>
+          <a href="SainathOmdas_Resume.pdf" type="button" class=" btn btn-header text-center" title="Download Resume" target="_blank">Resume&nbsp;&nbsp;   <i class="fas fa-file-download"></i></a>
+        </div>
+      </div>
+  </header>
 
-  <!--Technical-->
-  <section id="techSkills" class="text-center py-5">
-    <div class="container">
-      <!-- Section heading -->
-      <h2 class="h1-responsive font-weight-bold mb-5">Technical Expertise</h2>
-      <!-- Section description -->
-      <p class="lead grey-text w-responsive mx-auto mb-5">I can work flawlessly with all the below Languages .</p>
+
+  <div class="flex-center container-fluid">
+    <div class="text-white" style="position: absolute; bottom: 0;">
+      <a href="">
+        <div class="scroll-downs pb-5">
+          <div class="mousey">
+            <div class="scroller"></div>
+          </div>
+        </div>
+      </a>
+      <br><br>
+    </div>
+  </div>
+
+
+  <!-- ------------------------ Academics--------------------------------- -->
+
+  <section id="academics" class="pt-3 pb-5">
+    <div class="container text-center p-5 text-dark">
+      <h1 style="text-transform: uppercase;">Academics <i class="fas fa-pen-alt"></i> </h1>
+    </div>
+    <div class="container pt-lg-4">
       <div class="row">
-        <div class="col-md-12 text-center text-justify">
-          <ul class="list-group">
-            <li class="list-group-item" data-aos-deloy="0.3s" data-aos="fade-down"><strong><b>Programming Languages :</b></strong> C, C++, Java, Python(Beginner).</li>
-            <li class="list-group-item" data-aos-deloy="0.3s" data-aos="fade-down"><strong><b>Web Technologies: </b></strong>  HTML, CSS and Bootstrap. </li>
-       
-            <li class="list-group-item" data-aos-deloy="0.3s" data-aos="fade-down"><strong><b>Query Language : </b> </strong> SQL </li>
-            <li class="list-group-item" data-aos-deloy="0.3s" data-aos="fade-down"><strong><b>OS : </b></strong> Windows and Linux.</li>
+        <div class="col-md-6 pt-lg-5">
+
+          <div data-aos="fade-right" data-aos-duration="5000" data-aos-easing="ease-in-sine">
+            <img src="img\cap.png" class="img-fluid" alt="academic cap">
+          </div>
+
+        </div>
+        <div class="col-md-6">
+
+          <div class="btech timeline text-dark px-5" data-aos="fade-up" data-aos-duration="500" style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;">
+            <span class="crimson"> Course:</span> Bachelor of Technology (2016 - 2020) <br>
+            <span class="crimson">Stream:</span> Computer Science and Engineering <br>
+            <span class="crimson">Institution:</span> Anurag Group of Institutions<br>
+            <span class="crimson">CGPA:</span> 9.76/10 <br>
+          </div>
+
+          <div class="btech timeline text-dark" data-aos="fade-up" style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+            transition: 0.3s;">
+            <span class="crimson"> Course:</span> Intermediate (2014 - 2016)<br>
+            <span class="crimson">Stream:</span> MPC <br>
+            <span class="crimson">Institution:</span> Gowtham Junior College <br>
+            <span class="crimson">Percentage</span> 94.7% <br>
+          </div>
+          <div class="btech timeline text-dark px-5" data-aos="fade-up" data-aos-duration="30000" style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+            transition: 0.3s;">
+            <span class="crimson"> Course:</span> Secondary School Certificate (SSC)<br>
+            <span class="crimson">Period of Study:</span> 2013 - 2014<br>
+            <span class="crimson">Institution:</span> Sri Sai Model High School <br>
+            <span class="crimson">GPA:</span> 9.7/10 <br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ------------------------ Projects--------------------------------- -->
+
+
+  <section id="proj_sec">
+
+    <div class="projs container">
+      <h1 class="crimson text-center" style="text-transform: uppercase;">Projects <i class="fas fa-tasks"></i>
+      </h1>
+
+      <div class="container pt-5 mt-lg-5 justify-content-center" >
+        <div class="row" id="proj_grid" style="font-family: 'Roboto', sans-serif;">
+
+
+          <!-- <div class="col-md-4 col-sm-12 pb-5">
+                        <div class="card" data-aos="fade-up">
+                            <div class="card-body elegant-color white-text">
+                              <h4 class="card-title crimson">News title</h4>
+                              <p class="card-text white-text">Sed ut perspiciatis unde oNemo enim ipsam voluptatem quia voluptas.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="" class="btn-outline-black text-center btn-sm mx-sm-2 proj-btn hoverable" >Read More</a> 
+                              <a href="" class="btn-outline-black text-center btn-sm mx-sm-2 proj-btn hoverable" >View</a> 
+                            </div>
+                      </div>
+                    </div> -->
+
+
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+  </section>
+
+<!-- ------------------------ Contact--------------------------------- -->
+
+  <!--Section: contact-->
+  <section id="contact" class="py-5">
+
+    <div class="container">
+
+      <!-- Section heading -->
+      <h1 class="crimson text-center" style="text-transform: uppercase;">Contact <i class="far fa-address-card"></i>
+      </h1>
+
+      <!-- Section description -->
+      <p class="lead text-center w-responsive mx-auto mb-5">Will definitely reply you back.</p>
+
+      <!-- Grid row -->
+      <div class="row text-center ">
+        <!-- Grid column -->
+        <div class="col-md-12 text-center">
+          <ul class="list-unstyled mb-0">
+            <li data-aos="zoom-in-down" data-aos-deloy="0.5s">
+              <i class="fa fa-map-marker-alt fa-2x "></i>
+              <p>Charlapally, Hyderabad <br> Telangana - 501301</p>
+            </li>
+            <li data-aos="zoom-in-down" data-aos-deloy="0.5s">
+              <i class="fa fa-phone fa-2x mt-4 "></i>
+              <p>+ 91 84650 52042</p>
+            </li>
+            <li data-aos="zoom-in-down" data-aos-deloy="0.5s">
+              <i class="fa fa-envelope fa-2x mt-4 "></i>
+              <p class="mb-0"> <a href="mailto:sainathomdas@gmail.com" class="text-dark">sainathomdas@gmail.com</a> </p>
+            </li>
           </ul>
         </div>
+        <!-- Grid column -->
+
       </div>
+      <!-- Grid row -->
+
     </div>
+
   </section>
-  <!--Technical-->
+  <!--Section: contact-->
 
-  <!--certificate-->
+  <!-- ------------------------ Footer--------------------------------- -->
 
-  <section id="certifications" class="text-center py-5" style="background-color: rgba(0,0,0,0.9);">
+  <!-- Footer -->
+  <footer class="page-footer font-weight-bold pt-lg-5 pb-lg-0 black">
 
-    <!-- Container -->
-    <div class="container">
+    <!-- Footer Elements -->
+    <div class="container text-center">
 
-      <!-- Section heading -->
-      <h2 class="h1-responsive font-weight-bold mb-5">Certifications</h2>
-      <!-- Section description -->
-      <p class="text-light w-responsive mx-auto mb-5">These are the certificates that I have achieved.</p>
-
-      
+      <!-- Grid row-->
       <div class="row">
-        <div class="col-sm-12 col-md-6 col-lg-4 mt-2">
-          <a href="images/certificates/chatbot.jpeg" data-toggle = "lightbox" data-gallery="certificates">
-            <img style="width: 100%;height: 250px;" src="images/certificates/chatbot.jpeg" data-aos="zoom-in"class = "img-thumbnail hoverable" ></a>
-            <div class="card-body pb-0 ">
-              <p class="grey-text">Volunteered in a 24-hour Chatbot hackathon conducted by Anurag Group of Institutions
-                in collaboration with IBM and SMARTBRIDGE.
-              </p>
-              
-            </div>
+
+        <!-- Grid column -->
+        <div class="col-md-12 pt-5 pb-5">
+          <div>
+
+            <!-- Facebook -->
+
+            <a class="fb-ic" target="_blank" title="FB profile" href="https://www.facebook.com/SainathOmdas">
+              <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x hvr-float"> </i>
+            </a>
+            <!-- Twitter -->
+            <a class="tw-ic" target="_blank" title="Twitter profile" href="https://twitter.com/SainathOmdas">
+              <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x hvr-float"> </i>
+            </a>
+
+            <!--Linkedin -->
+            <a class="li-ic" target="_blank" title="Linkedin Profile" href="https://www.linkedin.com/in/sainathomdas/">
+              <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x hvr-float"> </i>
+            </a>
+            <!--Instagram-->
+            <a class="ins-ic" target="_blank" title="Instagram profile" href="https://www.instagram.com/sainathomdas/">
+              <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x hvr-float"> </i>
+            </a>
+            <!--Github-->
+            <a class="github-ic" target="_blank" title="GitHub profile" href="https://github.com/sainathomdas">
+              <i class="fab fa-github fa-lg white-text mr-md-5 mr-3 fa-2x hvr-float" aria-hidden="true"></i>
+            </a>
+
           </div>
-          
-          <div class="col-sm-12 col-md-6 col-lg-4 mt-2">
-            <a href="images/certificates/oracleJava.jpeg" data-toggle = "lightbox" data-gallery="certificates">
-              <img style="width: 100%;height: 250px;" src="images/certificates/oracleJava.jpeg" class = "img-thumbnail hoverable" data-aos="zoom-in" ></a>
-              <div class="card-body pb-0 ">
-                <p class="grey-text">Certified from ORACLE Academy on “JAVA Programming” in 2018.
-                </p>
-                
-              </div>
-            </div>
+        </div>
+        <!-- Grid column -->
 
-            <div class="col-sm-12 col-md-6 col-lg-4 mt-2" >
-              <a href="images/certificates/dbms.PNG" data-toggle = "lightbox" data-gallery="certificates">
-                <img style="width: 100%;height: 250px;" src="images/certificates/dbms.PNG" class = "img-thumbnail hoverable" data-aos="zoom-in" ></a>
-                <div class="card-body pb-0 ">
-                  <p class="grey-text">Qualified in Microsoft Technology Associate: Database Fundamentals examination.
-                  </p>
-                  
-                </div>
-              </div>
+      </div>
+      <!-- Grid row-->
+
+    </div>
+    <!-- Copyright -->
+    <div class="footer-copyright text-center my-0 py-0 font-small">
+      <hr style="background-color: grey;height: 0px;" class="pb-0 mb-1">
+      <!-- &copy; 2020 Copyright: -->
+      Designed by 
+      <a href="#header" style="color: crimson;"> Sainath Omdas </a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
 
 
-         
-              <div class="col-sm-12 col-md-6 col-lg-4 mt-2">
-                <a href="images/certificates/iotMerit.jpeg" data-toggle = "lightbox" data-gallery="certificates">
-                  <img style="width: 100%;height: 250px;" src="images/certificates/iotMerit.jpeg" class = "img-thumbnail hoverable" data-aos="zoom-in" ></a>
-                  <div class="card-body pb-0 ">
-                    <p class="grey-text">Awarded with Certificate of merit in an IoT hackathon conducted by Radiance
-Technologies, IIT Bombay.
+  <!-- --------------------------------------------------------- -->
 
-                    </p>
-                    
-                  </div>
-                </div>
+
+  <!-- JQuery -->
+  <script type="text/javascript" src="js\jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript"
+    src="js\popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript"
+    src="js\bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js\mdb.min.js"></script>
+
+  <script type="text/javascript" src="js\myjs.js"></script>
+  <script type="text/javascript" src="js\scroll.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <script> 
+    $(function () {
+      $.getJSON("projects.json", function (result) {
+        $.each(result.projects, function (index, proj_field) {
+          //console.log(index,field);
+          var project = '<div class="col-md-4 col-sm-12 pb-5">' +
+            '<div class="card" data-aos="fade-up">' +
+            '<div class="card-body elegant-color-dark white-text">' +
+            '<h5 class="card-title crimson text-center font-weight-bold">' + proj_field.title + '</h5>' +
+            '<p class="card-text white-text text-justify font-weight-light pt-3">' + proj_field.description + '</p>' +
+            '</div>' +
+            '<div class="card-footer">' +
+            '<form  action = "projects.html" method = "GET">' +
+              '<form action="projects.html" method="GET"><input type="" name="proj_id" value="'+proj_field.id+'" hidden/>'
+              
+              +
+
+            '<button type="submit" class="btn-outline-black text-center btn-sm mx-sm-2 proj-btn hoverable" >Read More</button>' +
             
-                <div class="col-sm-12 col-md-6 col-lg-4 mt-2">
-                  <a href="images/certificates/packetPrep.jpeg" data-toggle = "lightbox" data-gallery="certificates">
-                    <img style="width: 100%;height: 250px;" src="images/certificates/packetPrep.jpeg" class = "img-thumbnail hoverable" data-aos="zoom-in"></a>
-                    <div class="card-body pb-0 ">
-                      <p class="grey-text">Received a letter of Appreciation from PacketPrep (a startup) for building PacketPrep
-                        network.
-                      </p>
-                      
-                    </div>
-                  </div>
-                  
-                  <div class="col-sm-12 col-md-6 col-lg-4  mt-2">
-                    <a href="images/certificates/sih.PNG" data-toggle = "lightbox" data-gallery="certificates">
-                      <img style="width: 100%;height: 250px;" src="images/certificates/sih.PNG" class = "img-thumbnail hoverable" data-aos = "zoom-in"></a>
-                      <div class="card-body pb-0 ">
-                        <p class="grey-text">Participated in Smart India Hackathon - 2018 - Software Edition.
-                        </p>
-                        
-                      </div>
-                    </div>
-                    
-                    
-                    
-                  </div>
+            '<a style="visibility:' + proj_field.visibility +'" href="' + proj_field.link + '" class=" proj-btn btn-outline-black text-center btn-sm mx-sm-2 proj-anchor hoverable" >' + 'View' + '</a>' +
+            '</form>' +
+            '</div> </div> </div>';
+            console.log(proj_field.visibility);
+            $("#proj_grid").append(project + " ");
+        });
+      });
+    });
 
-                </div>
+  </script>
+<script>
+  var loading = document.getElementById('loading');
 
-                <!-- Container -->
+window.addEventListener('load',function() {
+    loading.style.display =  'none';
+})
+</script>
+</body>
 
-              </section>
-
-              <!--end of certificate-->
-
-              <!--Section: contact-->
-              <section id="contact" class="py-5">
-
-                <div class="container">
-
-                  <!-- Section heading -->
-                  <h2 class="h1-responsive font-weight-bold text-center mb-5">Contact </h2>
-                  <!-- Section description -->
-                  <p class="lead text-center w-responsive mx-auto mb-5">Will definitely reply you back.</p>
-
-                  <!-- Grid row -->
-                  <div class="row text-center ">
-
-                    
-
-                    <!-- Grid column -->
-                    <div class="col-md-12 text-center">
-                      <ul class="list-unstyled mb-0">
-                        <li data-aos="zoom-in-down" data-aos-deloy="0.5s">
-                          <i class="fa fa-map-marker-alt fa-2x teal-text"></i>
-                          <p >Charlapally, Hyderabad <br> Telangana - 501301</p>
-                        </li>
-                        <li data-aos="zoom-in-down" data-aos-deloy="0.5s">
-                          <i class="fa fa-phone fa-2x mt-4 teal-text"></i>
-                          <p>+ 91 84650 52042</p>
-                        </li>
-                        <li data-aos="zoom-in-down" data-aos-deloy="0.5s">
-                          <i class="fa fa-envelope fa-2x mt-4 teal-text"></i>
-                          <p class="mb-0" > <a href="mailto:sainathomdas@gmail.com" style="color: black;">sainathomdas@gmail.com</a> </p>
-                        </li>
-                      </ul>
-                    </div>
-                    <!-- Grid column -->
-
-                  </div>
-                  <!-- Grid row -->
-
-                </div>
-
-              </section>
-              <!--Section: contact-->
-              
-            </main>
-            <!-- Footer -->
-            <footer class="page-footer font-weight-bold pt-lg-5 pb-lg-0 black">
-
-              <!-- Footer Elements -->
-              <div class="container text-center">
-
-               <!-- Grid row-->
-               <div class="row">
-
-                <!-- Grid column -->
-                <div class="col-md-12 py-5">
-                  <div >
-                    
-                    <!-- Facebook -->
-                    
-                    <a class="fb-ic" target="_blank" title="FB profile" href="https://www.facebook.com/SainathOmdas">
-                      <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x hvr-float" > </i>
-                    </a>
-                    <!-- Twitter -->
-                    <a class="tw-ic" target="_blank" title="Twitter profile" href="https://twitter.com/SainathOmdas">
-                      <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x hvr-float"> </i>
-                    </a>
-
-                    <!--Linkedin -->
-                    <a class="li-ic" target="_blank" title="Linkedin Profile" href="https://www.linkedin.com/in/sainathomdas/">
-                      <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x hvr-float"> </i>
-                    </a>
-                    <!--Instagram-->
-                    <a class="ins-ic" target="_blank" title="Instagram profile" href="https://www.instagram.com/sainath_omdas/">
-                      <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x hvr-float"> </i>
-                    </a>
-                    <!--Github-->
-                    <a class="github-ic" target="_blank" title="GitHub profile" href="https://github.com/sainathomdas">
-                      <i class="fab fa-github fa-lg white-text mr-md-5 mr-3 fa-2x hvr-float" aria-hidden="true"></i>
-                    </a>
-
-                    
-                    
-                  </div>
-                </div>
-                <!-- Grid column -->
-                
-              </div>
-              <!-- Grid row-->
-              
-            </div>
-            <!-- Footer Elements -->
-            <div class="footer-copyright text-center py-3"><!--Copyrights-->
-              <a href=""> </a>
-            </div>
-          </footer>
-          <!-- Footer -->
-          
-          <!-- /Start your project here-->
-
-          <!-- SCRIPTS -->
-          <!-- JQuery -->
-          <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-          <!-- Bootstrap tooltips -->
-          <script type="text/javascript" src="js/popper.min.js"></script>
-          <!-- Bootstrap core JavaScript -->
-          <script type="text/javascript" src="js/bootstrap.min.js"></script>
-          <!-- MDB core JavaScript -->
-          <script type="text/javascript" src="js/mdb.js"></script>
-
-          <script type = "text/javascript" src = "js/scroll.js" ></script>
-          
-          
-          <!--ANimate on scroll-->
-          <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-          
-          <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
-
-
-          <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
-
-
-          <script>
-            
-            AOS.init();
-
-            var loading = document.getElementById('preloader');
-
-            window.addEventListener('load',function() {
-              loading.style.display =  'none';
-       
-              
-            });
-
-            $(function() {
-              $('.nav-link').click(function (event) {
-                $('.navbar-collapse').collapse('hide');
-              });
-            });
-
-            $(document).on('click', '[data-toggle="lightbox"]', function(event) {
-              event.preventDefault();
-              $(this).ekkoLightbox();
-            });
-
-          </script>
-        </body>
-
-        </html>
+</html>

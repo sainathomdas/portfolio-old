@@ -1,23 +1,410 @@
-/* Required height of parents of the Full Page Intro and Intro itself */
-html,
-body,
-.view {
-  height: 100%; }
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-/* Navbar animation */
-.navbar {
-  background-color: rgba(0, 0, 0, 0.2); }
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #000;
+  font-family: "Nunito", sans-serif;
+}
 
 
 
-/* Adding color to the Navbar on mobile */
-@media only screen and (max-width: 768px) {
-  .navbar {
-    background-color: #000; } }
+#loading {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  transition: 1s ease;
+  background: url('../img/preloader.gif') center no-repeat #111111;
+}
 
-/* Footer color for sake of consistency with Navbar */
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+      to bottom,
+      rgba(5, 5, 5, 0.5),
+      rgba(05, 5, 5, 0.35)
+    ),
+    url("../img/header.jpg") center no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.projects-header {
+  width: 100%;
+  min-height: 130vh;
+  background: linear-gradient(to bottom, rgba(5,5,5,.35), rgba(05,5,5,.6)), url("../img/proj_bg.jpg") center no-repeat;
+  /* background: url(proj_bg.jpg) center no-repeat; */
+  background-size: cover;
+  overflow: hidden;
+}
+/* 
+   .layer {
+    background-color: rgba(5, 5, 5, 0.35);
+    width: 100%;
+    height: 100%;
+    z-index: -99;
+  }  */
+
+nav {
+  padding: 0;
+  /* display: flex; */
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  font-weight: 300;
+  transform: translateX(-100rem);
+  animation: slideIn 0.5s forwards;
+  transition: all ease-in-out 0.2s;
+}
+
+/* nav ul {
+    display: flex;
+  } */
+
+nav ul li {
+  list-style: none;
+  transform: translateX(100rem);
+  animation: slideIn 0.5s forwards;
+}
+
+nav ul li:nth-child(1) {
+  animation-delay: 0s;
+}
+
+nav ul li:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+nav ul li:nth-child(3) {
+  animation-delay: 1s;
+}
+
+nav ul li:nth-child(4) {
+  animation-delay: 1.5s;
+}
+
+nav ul li a {
+  padding: 1rem 0;
+  margin: 0 3rem;
+  position: relative;
+  letter-spacing: 2px;
+}
+
+nav ul li a:last-child {
+  margin-right: 0;
+}
+
+nav ul li a::before,
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: crimson;
+  left: 0;
+  transform: scaleX(0);
+  transition: all 0.5s;
+}
+
+nav ul li a::before {
+  top: 0;
+  transform-origin: left;
+}
+
+nav ul li a::after {
+  bottom: 0;
+  transform-origin: right;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 1);
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 10;
+  transition: opacity 650ms;
+  transform: scale(0);
+  opacity: 0;
+  display: none;
+  min-height: 100vh;
+}
+
+nav ul li a:hover::before,
+nav ul li a:hover::after {
+  transform: scaleX(1);
+}
+
+.crimson {
+  color: crimson;
+}
+
+@keyframes slideIn {
+  from {
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.top-nav-collapse {
+  background-color: rgb(10, 10, 10);
+}
+
+@media screen and (max-width: 790px) {
+  nav {
+    padding-top: 0;
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin-top: 5rem;
+  }
+
+  nav ul li a {
+    margin: 0;
+    font-size: 2.2rem;
+  }
+
+  .overlay.menu-open,
+  nav.menu-open {
+    display: flex;
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  .projects-header{
+    min-height: 180vh;
+  }
+}
+
+/* -------------------------------------- */
+
+.scroll-downs {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  margin-bottom: 20px;
+  width: 34px;
+  height: 55px;
+}
+.mousey {
+  width: 3px;
+  padding: 10px 15px;
+  height: 35px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
+}
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: #fff;
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
+  animation-iteration-count: infinite;
+}
+@keyframes scroll {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+}
+
+/* --------------------------------------------------- */
+
+.timeline {
+  font-size: 1em;
+  line-height: 1.5em;
+
+  border-top: 3px solid;
+  -webkit-border-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#dc143c),
+    to(#000000)
+  );
+  -webkit-border-image: linear-gradient(to right, #dc143c 0%, #000000 100%);
+  -o-border-image: linear-gradient(to right, #dc143c 0%, #000000 100%);
+  border-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#dc143c),
+    to(#000000)
+  );
+  border-image: linear-gradient(to right, #dc143c 0%, #000000 100%);
+  border-image-slice: 1;
+  border-width: 3px;
+  margin: 0;
+  padding: 40px;
+  counter-increment: section;
+  position: relative;
+  color: #34435e;
+}
+/* p:before {
+  content: counter(section);
+  position: absolute;
+  border-radius: 50%;
+  padding: 10px;
+  height: 1.25em;
+  width: 1.25em;
+  background-color: #34435E;
+  text-align: center;
+  line-height: 1.25em;
+  color: #ffffff;
+  font-size: 1em;
+} */
+
+.timeline:nth-child(odd) {
+  border-right: 3px solid;
+  padding-left: 0;
+}
+.timeline:nth-child(odd):before {
+  left: 100%;
+  margin-left: -20px;
+}
+
+.timeline:nth-child(even) {
+  border-left: 3px solid;
+  padding-right: 0;
+}
+.timeline:nth-child(even):before {
+  right: 100%;
+  margin-right: -20px;
+}
+
+.timeline:first-child {
+  border-top: 0;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.timeline:last-child {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+/* ------------------------------------------ */
+
+#proj_sec {
+  background-color: rgb(8, 8, 8);
+  padding-top: 90px;
+  padding-bottom: 90px;
+  transform: skewY(-3deg);
+  min-height: 100vh;
+}
+
+.projs {
+  transform: skewY(3deg);
+}
+
+.card {
+  min-height: 20rem;
+  width: auto;
+  border-radius: 10px;
+}
+.card-body {
+  border-radius: 10px;
+  
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.5);
+  transform: scale(1.1);
+}
+
+
+#contact {
+  background: url("../img/contact_bg.jpg")
+    center no-repeat;
+  background-size: cover;
+  transform: skewY(-3deg);
+}
+
+#contact .container {
+  transform: skewY(3deg);
+}
+
+#academics {
+  background: url('../img/academics.jpg') center no-repeat;
+  background-size: cover;
+}
+
+/* ------------------------------------------- */
+
+.hvr-float {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-float:hover,
+.hvr-float:focus,
+.hvr-float:active {
+  -webkit-transform: translateY(-8px);
+  transform: translateY(-8px);
+}
+
 .page-footer {
-  background-color: #000; }
-
-#time-counter {
-  font-size: 5rem; }
+  transform: skewY(-1.5deg);
+}
+.footer-copyright {
+  transform: skewY(1.5deg);
+}
+/* ------------------------------------------- */

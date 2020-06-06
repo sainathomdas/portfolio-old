@@ -1,30 +1,14 @@
-$(document).ready(function() {
-    $('a[href*=#]').bind('click', function(e) {
-            e.preventDefault(); // prevent hard jump, the default behavior
+$(document).on('click', 'a[href^="#"]', function (event) {
+    event.preventDefault();
 
-            var target = $(this).attr("href"); // Set the target as variable
-
-            // perform animated scrolling by getting top-position of target-element and set it as scroll target
-            $('html, body').stop().animate({
-                    scrollTop: $(target).offset().top
-            }, 600, function() {
-                    location.hash = target; //attach the hash (#jumptarget) to the pageurl
-            });
-
-            return false;
-    });
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 500);
 });
 
-$(window).scroll(function() {
-    var scrollDistance = $(window).scrollTop();
 
-    // Show/hide menu on scroll
-    //if (scrollDistance >= 850) {
-    //		$('nav').fadeIn("fast");
-    //} else {
-    //		$('nav').fadeOut("fast");
-    //}
 
-    // Assign active class to nav links while scolling
-  
-}).scroll();
+$('.navbar-nav>li>a').on('click', function(){
+    $('.navbar-collapse').collapse('hide');
+    $(".overlay").hide();
+});

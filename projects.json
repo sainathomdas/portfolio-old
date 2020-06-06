@@ -1,0 +1,60 @@
+{
+
+    "projects": [{
+            "id": 0,
+            "title": "Image Captioning",
+            "description": "Generating a caption for the given image using CNN and RNN. The model has been trained on the Flickr8K Dataset.",
+            "details": "Programming Language - Python <br> Libraries used - Tensorflow, Keras, Pandas, Numpy, Flask Web Framework",
+            "link": "",
+            "image": "img/image_captioning.png",
+            "visibility": "hidden"
+        },
+        {
+            "id": 1,
+            "title": "Examination Management System",
+            "description": "A portal to create exam notifications, collecting fees from the students and generating hall tickets for the students who paid the fees",
+            "details": "Scripting Language - PHP <br> Web Framework - CodeIgniter (MVC Architecture)<br>Libraries used -  DOMPDF, CrudIgniter",
+            "link": "",
+            "image": "img/examination_branch.png",
+            "visibility": "hidden"
+        },
+        {
+            "id": 2,
+            "title": "Anurag's Skill Club",
+            "description": "An android app for our college's SkillsClub. Admin login has provided with many features sending notifications to students.",
+            "details": "Programming Language - Java <br> IDE used - Android Studio",
+            "link": "",
+            "image": "img/skillsclub.png",
+            "visibility": "hidden"
+        },
+            {
+            "id": 3,
+            "title": "International Conference Website",
+            "description": "A website for an international conference ICACII-2019, organized by Anurag Group of Institutions. ",
+            "details": "Scritping Language - PHP <br> CSS Framework -  Bootstrap",
+            "link": "http://anuragcdtc.com/icacii/ICACII/",
+            "image": "img/icacii.png",
+            "visibility": "visible"
+        },
+        {
+            "id": 4,
+            "title": "Anurag’s Student Course Registration ",
+            "description": "Center of Development of Technical Competencies (CDTC) is a student enrollment site            ",
+            "details": "Programming Language - PHP <br> Web Framework - CodeIgniter (MVC Architecture)",
+            "link": "http://anuragcdtc.com/",
+            "image": "img/cdtc.png",
+            "visibility": "visible"
+        },
+      
+        {
+            "id": 5,
+            "title": "Women's Club Website",
+            "description": "- A Student’s club Portfolio Website developed using HTML and CSS",
+            "details": "Scripting Language - PHP <br> CSS Framework -  Bootstrap",
+            "link": "http://anuragcdtc.com/womensclub/",
+            "image": "img/womensclub.png",
+            "visibility": "visible"
+        }
+    ]
+
+}
