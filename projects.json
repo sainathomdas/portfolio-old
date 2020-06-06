@@ -12,7 +12,7 @@
         {
             "id": 1,
             "title": "Examination Management System",
-            "description": "A portal to create exam notifications, collecting fees from the students and generating hall tickets for the students who paid the fees",
+            "description": "A portal to create exam notifications, collecting fees from the students and generating hall tickets for the students who paid.",
             "details": "Scripting Language - PHP <br> Web Framework - CodeIgniter (MVC Architecture)<br>Libraries used -  DOMPDF, CrudIgniter",
             "link": "",
             "image": "img/examination_branch.png",
@@ -21,7 +21,7 @@
         {
             "id": 2,
             "title": "Anurag's Skill Club",
-            "description": "An android app for our college's SkillsClub. Admin login has provided with many features sending notifications to students.",
+            "description": "An android app for our college's Skills Club. Admin login has provided with many features including sending notifications to students.",
             "details": "Programming Language - Java <br> IDE used - Android Studio",
             "link": "",
             "image": "img/skillsclub.png",
@@ -30,7 +30,7 @@
             {
             "id": 3,
             "title": "International Conference Website",
-            "description": "A website for an international conference ICACII-2019, organized by Anurag Group of Institutions. ",
+            "description": "A website for an International Conference ICACII-2019, organized by Anurag Group of Institutions. ",
             "details": "Scritping Language - PHP <br> CSS Framework -  Bootstrap",
             "link": "http://anuragcdtc.com/icacii/ICACII/",
             "image": "img/icacii.png",
@@ -39,7 +39,7 @@
         {
             "id": 4,
             "title": "Anurag’s Student Course Registration ",
-            "description": "Center of Development of Technical Competencies (CDTC) is a student enrollment site            ",
+            "description": "Center for Development of Technical Competencies (CDTC) is a student enrollment site into various clubs and courses offered by Anurag Group of Institutions.",
             "details": "Programming Language - PHP <br> Web Framework - CodeIgniter (MVC Architecture)",
             "link": "http://anuragcdtc.com/",
             "image": "img/cdtc.png",
@@ -49,7 +49,7 @@
         {
             "id": 5,
             "title": "Women's Club Website",
-            "description": "- A Student’s club Portfolio Website developed using HTML and CSS",
+            "description": "A Student’s club Portfolio Website developed using HTML and CSS.",
             "details": "Scripting Language - PHP <br> CSS Framework -  Bootstrap",
             "link": "http://anuragcdtc.com/womensclub/",
             "image": "img/womensclub.png",

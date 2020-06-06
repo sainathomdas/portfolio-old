@@ -40,7 +40,7 @@
     <div class="container">
       <nav class="navbar fixed-top navbar-expand-lg navbar-dark font-weight-bold scrolling-navbar">
         <div class="container">
-          <a class="navbar-brand" href="#"><strong>S<span class="crimson">A</span>IN<span
+          <a class="navbar-brand" href="index.html"><strong>S<span class="crimson">A</span>IN<span
                 class="crimson">A</span>TH</strong></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
@@ -73,7 +73,8 @@
         <h5 class="ml-lg-2 skills">Web Developer <span class="crimson">|</span> Android Developer</h5>
         <div class="pt-lg-2 text-white">
           <a href="#contact" type="button" class="btn btn-header text-center ml-lg-2 mr-lg-2"> Hire Me</a>
-          <a href="SainathOmdas_Resume.pdf" type="button" class=" btn btn-header text-center" title="Download Resume" target="_blank">Resume&nbsp;&nbsp;   <i class="fas fa-file-download"></i></a>
+          <a href="SainathOmdas_Resume.pdf" type="button" class=" btn btn-header text-center" title="Download Resume"
+            target="_blank">Resume&nbsp;&nbsp; <i class="fas fa-file-download"></i></a>
         </div>
       </div>
   </header>
@@ -147,7 +148,7 @@
       <h1 class="crimson text-center" style="text-transform: uppercase;">Projects <i class="fas fa-tasks"></i>
       </h1>
 
-      <div class="container pt-5 mt-lg-5 justify-content-center" >
+      <div class="container pt-5 mt-lg-5 justify-content-center">
         <div class="row" id="proj_grid" style="font-family: 'Roboto', sans-serif;">
 
 
@@ -173,7 +174,7 @@
 
   </section>
 
-<!-- ------------------------ Contact--------------------------------- -->
+  <!-- ------------------------ Contact--------------------------------- -->
 
   <!--Section: contact-->
   <section id="contact" class="py-5">
@@ -266,7 +267,7 @@
     <div class="footer-copyright text-center my-0 py-0 font-small">
       <hr style="background-color: grey;height: 0px;" class="pb-0 mb-1">
       <!-- &copy; 2020 Copyright: -->
-      Designed by 
+      Designed by
       <a href="#header" style="color: crimson;"> Sainath Omdas </a>
     </div>
     <!-- Copyright -->
@@ -281,11 +282,9 @@
   <!-- JQuery -->
   <script type="text/javascript" src="js\jquery-3.4.1.min.js"></script>
   <!-- Bootstrap tooltips -->
-  <script type="text/javascript"
-    src="js\popper.min.js"></script>
+  <script type="text/javascript" src="js\popper.min.js"></script>
   <!-- Bootstrap core JavaScript -->
-  <script type="text/javascript"
-    src="js\bootstrap.min.js"></script>
+  <script type="text/javascript" src="js\bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="js\mdb.min.js"></script>
 
@@ -296,7 +295,7 @@
     AOS.init();
   </script>
 
-  <script> 
+  <script>
     $(function () {
       $.getJSON("projects.json", function (result) {
         $.each(result.projects, function (index, proj_field) {
@@ -309,29 +308,29 @@
             '</div>' +
             '<div class="card-footer">' +
             '<form  action = "projects.html" method = "GET">' +
-              '<form action="projects.html" method="GET"><input type="" name="proj_id" value="'+proj_field.id+'" hidden/>'
-              
-              +
+            '<form action="projects.html" method="GET"><input type="" name="proj_id" value="' + proj_field.id + '" hidden/>'
+
+            +
 
             '<button type="submit" class="btn-outline-black text-center btn-sm mx-sm-2 proj-btn hoverable" >Read More</button>' +
-            
-            '<a style="visibility:' + proj_field.visibility +'" href="' + proj_field.link + '" class=" proj-btn btn-outline-black text-center btn-sm mx-sm-2 proj-anchor hoverable" >' + 'View' + '</a>' +
+
+            '<a style="visibility:' + proj_field.visibility + '" href="' + proj_field.link + '" class=" proj-btn btn-outline-black text-center btn-sm mx-sm-2 proj-anchor hoverable" >' + 'View' + '</a>' +
             '</form>' +
             '</div> </div> </div>';
-            console.log(proj_field.visibility);
-            $("#proj_grid").append(project + " ");
+
+          $("#proj_grid").append(project + " ");
         });
       });
     });
 
   </script>
-<script>
-  var loading = document.getElementById('loading');
+  <script>
+    var loading = document.getElementById('loading');
 
-window.addEventListener('load',function() {
-    loading.style.display =  'none';
-})
-</script>
+    window.addEventListener('load', function () {
+      loading.style.display = 'none';
+    })
+  </script>
 </body>
 
 </html>
