@@ -1,7 +1,17 @@
 {
 
-    "projects": [{
-            "id": 0,
+    "projects": [
+        {
+            "id": 6,
+            "title": "Retail Banking",
+            "description": "MARS Bank is a retail bank which serves individual customers, to manage their savings and current accounts.",
+            "details": "Programming Language - Python <br> Framework Used - Flask <br> Database Used - SQLITE3",
+            "link": "",
+            "image": "img/RetailBanking.png",
+            "visibility": "hidden"
+        },
+        {
+            "id": 5,
             "title": "Image Captioning",
             "description": "Generating a caption for the given image using CNN and RNN. The model has been trained on the Flickr8K Dataset.",
             "details": "Programming Language - Python <br> Libraries used - Tensorflow, Keras, Pandas, Numpy, Flask Web Framework",
@@ -10,7 +20,7 @@
             "visibility": "hidden"
         },
         {
-            "id": 1,
+            "id": 4,
             "title": "Examination Management System",
             "description": "A portal to create exam notifications, collecting fees from the students and generating hall tickets for the students who paid.",
             "details": "Scripting Language - PHP <br> Web Framework - CodeIgniter (MVC Architecture)<br>Libraries used -  DOMPDF, CrudIgniter",
@@ -19,7 +29,7 @@
             "visibility": "hidden"
         },
         {
-            "id": 2,
+            "id": 3,
             "title": "Anurag's Skill Club",
             "description": "An android app for our college's Skills Club. Admin login has provided with many features including sending notifications to students.",
             "details": "Programming Language - Java <br> IDE used - Android Studio",
@@ -28,7 +38,7 @@
             "visibility": "hidden"
         },
             {
-            "id": 3,
+            "id": 2,
             "title": "International Conference Website",
             "description": "A website for an International Conference ICACII-2019, organized by Anurag Group of Institutions. ",
             "details": "Scritping Language - PHP <br> CSS Framework -  Bootstrap",
@@ -37,7 +47,7 @@
             "visibility": "visible"
         },
         {
-            "id": 4,
+            "id": 1,
             "title": "Anurag’s Student Course Registration ",
             "description": "Center for Development of Technical Competencies (CDTC) is a student enrollment site into various clubs and courses offered by Anurag Group of Institutions.",
             "details": "Programming Language - PHP <br> Web Framework - CodeIgniter (MVC Architecture)",
@@ -47,7 +57,7 @@
         },
       
         {
-            "id": 5,
+            "id": 0,
             "title": "Women's Club Website",
             "description": "A Student’s club Portfolio Website developed using HTML and CSS.",
             "details": "Scripting Language - PHP <br> CSS Framework -  Bootstrap",
