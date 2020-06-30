@@ -13,7 +13,7 @@
         {
             "id": 6,
             "title": "Hospital Management System",
-            "description": "A Hospital Management System with the ability to register Patient, update and delete (discharge) Patient, manage the diagnostics and pharmacy for billing. Also, to be able to view Patient information and get the complete billing information.",
+            "description": "A Hospital Management System with the ability to register Patient, update and delete Patient, manage the diagnostics and pharmacy for billing. Also, to be able to view Patient information and get the complete billing information.",
             "details": "Programming Language - Python <br> Framework Used - Flask <br> Database Used - SQLITE3",
             "link": "",
             "image": "img/HospitalManagementSystem.png",
